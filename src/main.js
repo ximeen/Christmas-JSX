@@ -15,7 +15,7 @@ Script();
 // ------------LIB SCROLL REVEAL --------------
 
 const sr = ScrollReveal({
-    distance: '30px',
+    distance: '50px',
     duration: 1800,
     reset: true,
 });

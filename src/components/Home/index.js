@@ -28,7 +28,7 @@ export function Home(){
                 </div>
 
                 <div class="share__image">
-                    <img src="./src/images/shared.png"  alt"Shared image">
+                    <img src="/src/images/shared.png"  alt"Shared image">
                 </div>
             </div>
         </section>
