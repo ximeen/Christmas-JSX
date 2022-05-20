@@ -1,19 +1,20 @@
 import './main.scss'
 
 
-import HOME__IMAGE from './../../public/home.png'
+// import  from './../../public/home.png'
 
 export function Home(){
     const home = document.querySelector("#Home");
 
-    // document.getElementById("home-image").src = HOME__IMAGE;
+    const HOME__IMAGE = new URL('./../../public/home.png', import.meta.url).href;
+    // document.getElementById('home-image').src = HOME__IMAGE;
 
     home.innerHTML =
     `
         <section class = "home" id="home"> 
             <div class="home__container bd-container bd-grid" >
                 <div class="home__image">
-                    <img id="home-image" src="${HOME__IMAGE}" alt="homepage image, wich is a santa claus hand, with white and red colors, holding a gift box."/>
+                    <img id="home-image" src="${HOME__IMAGE} " alt="homepage image, wich is a santa claus hand, with white and red colors, holding a gift box."/>
                 </div>
 
                 <div class="home__data">
