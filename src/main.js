@@ -17,7 +17,7 @@ Script();
 const sr = ScrollReveal({
     distance: '20px',
     duration: 1800,
-    reset: true,
+    reset: false,
 });
 
 sr.reveal(`.home__data, .home__image, 
