@@ -14,24 +14,24 @@ Script();
 
 // ------------LIB SCROLL REVEAL --------------
 
-// const sr = ScrollReveal({
-//     distance: '50px',
-//     duration: 1800,
-//     reset: true,
-// });
+const sr = ScrollReveal({
+    distance: '50px',
+    duration: 1800,
+    reset: true,
+});
 
-// sr.reveal(`.home__data, .home__image, 
-//            .decoration__data,
-//            .accessory__content,
-//            .footer__content`, {
-//     origin: 'top',
-//     interval: 200,
-// })
+sr.reveal(`.home__data, .home__image, 
+           .decoration__data,
+           .accessory__content,
+           .footer__content`, {
+    origin: 'top',
+    interval: 200,
+})
 
-// sr.reveal(`.share__image, .send__content`, {
-//     origin: 'left'
-// })
+sr.reveal(`.share__image, .send__content`, {
+    origin: 'left'
+})
 
-// sr.reveal(`.share__data, .send__image`, {
-//     origin: 'right'
-// })
+sr.reveal(`.share__data, .send__image`, {
+    origin: 'right'
+})
