@@ -7,8 +7,18 @@ export function Home(){
     const home = document.querySelector("#Home");
 
     const HOME__IMAGE = new URL('./../../public/home.png', import.meta.url).href;
-    // document.getElementById('home-image').src = HOME__IMAGE;
+    const SHARE__IMAGE = new URL('./../../public/shared.png', import.meta.url).href;
+    const DECORATION1__IMAGE = new URL('./../../public/decoration1.png', import.meta.url).href;
+    const DECORATION2__IMAGE = new URL('./../../public/decoration2.png', import.meta.url).href;
+    const DECORATION3__IMAGE = new URL('./../../public/decoration3.png', import.meta.url).href;
+    const ACCESSORY1__IMAGE = new URL('./../../public/accessory1.png', import.meta.url).href;
+    const ACCESSORY2__IMAGE = new URL('./../../public/accessory2.png', import.meta.url).href;
+    const ACCESSORY3__IMAGE = new URL('./../../public/accessory3.png', import.meta.url).href;
+    const ACCESSORY4__IMAGE = new URL('./../../public/accessory4.png', import.meta.url).href;
+    const ACCESSORY5__IMAGE = new URL('./../../public/accessory5.png', import.meta.url).href;
+    const SEND__IMAGE = new URL('./../../public/send.png', import.meta.url).href;
 
+    
     home.innerHTML =
     `
         <section class = "home" id="home"> 
@@ -34,7 +44,7 @@ export function Home(){
                 </div>
 
                 <div class="share__image">
-                    <img src="./src/public/shared.png"  alt"Shared image"/>
+                    <img src="${SHARE__IMAGE}" alt"Shared image"/>
                 </div>
             </div>
         </section>
@@ -43,19 +53,19 @@ export function Home(){
         <h2 class="section-title">Give Christmas Decorations <br> For Your Home</h2>
             <div class="decoration__container bd-grid">
                 <div class="decoration__data" >
-                    <img src="./src/public/decoration1.png" alt="the image of a hand holding a bell" class="decoration__image"/>
+                    <img src="${DECORATION1__IMAGE}" alt="the image of a hand holding a bell" class="decoration__image"/>
                     <h3 class="decoration__title"> Christmas belss </h3>
                     <a href="#" class="decoration__button decoration__link"> Go shopping </a>
                 </div>
 
                 <div class="decoration__data" >
-                    <img src="./src/public/decoration2.png" alt="the image of a hand holding a candies" class="decoration__image"/>
+                    <img src="${DECORATION2__IMAGE}" alt="the image of a hand holding a candies" class="decoration__image"/>
                     <h3 class="decoration__title"> Christmas candies </h3>
                     <a href="#" class="decoration__button decoration__link"> Go shopping </a>
                 </div>
 
                 <div class="decoration__data" >
-                    <img src="./src/public/decoration3.png" alt="the image of a hand holding a trees" class="decoration__image"/>
+                    <img src="${DECORATION3__IMAGE}" alt="the image of a hand holding a trees" class="decoration__image"/>
                     <h3 class="decoration__title"> Christmas trees </h3>
                     <a href="#" class="decoration__button decoration__link"> Go shopping </a>
                 </div>
@@ -68,7 +78,7 @@ export function Home(){
 
             <div class="accessory__container bd-grid">
                 <div class="accessory__content">
-                    <img src="./src/public/accessory1.png" alt="this a image the globe of snow" class="accessory__image"/>
+                    <img src="${ACCESSORY1__IMAGE}" alt="this a image the globe of snow" class="accessory__image"/>
                     <h3 class="accessory__title"> Snow globe  </h3>
                     <span class="accessory__category">Accessory </span>
                     <span class="accessory__price"> $2,00 </span>
@@ -76,7 +86,7 @@ export function Home(){
                 </div>
 
                 <div class="accessory__content">
-                <img src="./src/public/accessory2.png" alt="this a image the globe of snow" class="accessory__image"/>
+                <img src="${ACCESSORY2__IMAGE}" alt="this a image the globe of snow" class="accessory__image"/>
                 <h3 class="accessory__title"> Candy  </h3>
                 <span class="accessory__category">Accessory </span>
                 <span class="accessory__price"> $5,00 </span>
@@ -84,7 +94,7 @@ export function Home(){
                 </div>
 
                 <div class="accessory__content">
-                    <img src="./src/public/accessory3.png" alt="this a image the globe of snow" class="accessory__image"/>
+                    <img src="${ACCESSORY3__IMAGE}" alt="this a image the globe of snow" class="accessory__image"/>
                     <h3 class="accessory__title"> keychain </h3>
                     <span class="accessory__category">Accessory </span>
                     <span class="accessory__price"> $9,00 </span>
@@ -92,14 +102,14 @@ export function Home(){
                 </div>
 
                 <div class="accessory__content">
-                    <img src="./src/public/accessory4.png" alt="this a image the globe of snow" class="accessory__image"/>
+                    <img src="${ACCESSORY4__IMAGE}" alt="this a image the globe of snow" class="accessory__image"/>
                     <h3 class="accessory__title"> Ornament ball </h3>
                     <span class="accessory__category">Accessory </span>
                     <span class="accessory__price"> $1,00 </span>
                     <a href="#" class="accessory__button"> <i class='bx bx-heart'></i> </a>
                 </div>
                 <div class="accessory__content">
-                    <img src="./src/public/accessory5.png" alt="this a image the globe of snow" class="accessory__image"/>
+                    <img src="${ACCESSORY5__IMAGE}" alt="this a image the globe of snow" class="accessory__image"/>
                     <h3 class="accessory__title"> Surprise box  </h3>
                     <span class="accessory__category">Accessory </span>
                     <span class="accessory__price"> $20,00 </span>
@@ -125,7 +135,7 @@ export function Home(){
                 </div>
 
                 <div class="send__image">
-                    <img src="./src/public/send.png" alt="Santa claus delivering a gift" />
+                    <img src="${SEND__IMAGE}" alt="Santa claus delivering a gift" />
                 </div>
             </div>
 
