@@ -1,0 +1,136 @@
+@import '/src/main.scss';
+
+
+.header-1{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+}
+
+.nav{
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    .nav-itens{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2.5rem 0 0;
+        text-align: center;
+        background-color: var(--body-color); 
+        transition: .4s;
+        box-shadow: 0 0 4px rgba(0,0,0,.1);
+        border-radius: 2rem;
+        z-index: var(--z-fixed);
+    }
+}
+
+.nav-item{
+    margin-bottom: var(--mb-3)
+}
+
+.nav-link, .nav-logo, .nav-toggle{
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+}
+
+.nav-logo:hover{
+    color: var(--first-color);
+}
+.nav-link{
+    transition: .3s;
+
+    &:hover{
+        color: var(--first-color);
+    }
+}
+
+.nav-toggle{
+        font-size: 1.3rem;
+        cursor: pointer;
+}
+
+.show-menu{
+    top: calc(var(--header-height) + 1rem);
+}
+
+.active-link{
+    position: relative;
+
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -.75rem;
+        left: 45%;
+        width: 5px;
+        height: 5px;
+        background-color: var(--title-color);
+        border-radius: 50%;
+    }
+}
+
+.scroll-top{
+    color: var(--title-color);
+    position: fixed;
+    right:1rem;
+    bottom: -20%;
+    padding: .3rem;
+    background: rgba(218,37,53,.5);
+
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    z-index: var(--z-tooltip);
+    border-radius: .4rem;
+
+    transition: .4s;
+    visibility: hidden;
+
+
+    &:hover{
+        background-color: var(--first-color);
+    }
+
+    .scroll-top-icon{
+        font-size: 1.5rem;
+        color: var(--body-color);
+    }
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom: 1.5rem;
+
+}
+
+.nav-container{
+    max-width: 968px;
+    width: calc(100% - 3rem);
+    margin-left: var(--mb-3);
+    margin-right: var(--mb-3);
+}
+
+.bd-grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+    // ---------- CHANGE THEME -----------------
+
+.change-theme{
+    position: absolute;
+    right: 1.5rem;
+    top: 2.2rem;
+    display: flex;
+    font-size: 2rem;
+    cursor: pointer;
+}

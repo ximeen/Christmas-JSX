@@ -1,0 +1,48 @@
+@import '/src/main.scss';
+
+.footer{
+
+    &__container{
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    &__logo{
+        color: var(--title-color);
+    }
+
+    &__title{
+        margin-bottom: var(--mb-2);
+    }
+
+    &__title,&__logo{
+        font-size: var(--h3-font-size)
+    }
+
+    &__links{
+        display: inline-block;
+        margin-bottom: .75rem;
+        color: var(--title-color);
+
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+
+    &__social{
+        font-size: 1.5rem;
+        color:var(--title-color);
+        margin-right: var(--mb-1);
+
+        &:hover{
+            color: var(--first-color);
+        }
+    }
+
+    &__copyright{
+        text-align: center;
+        color: var(--title-color-light);
+        font-size: var(--small-font-size);
+        margin-top: 4rem;
+    }
+    
+}
